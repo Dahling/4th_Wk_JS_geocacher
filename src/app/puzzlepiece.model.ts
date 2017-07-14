@@ -1,3 +1,3 @@
 export class Puzzlepiece {
-  constructor (public name: string, public age: number, public likes: string, public dislikes: string) { }
+  constructor (public name: string, public age: number, public description: string, public likes: string, public dislikes: string) { }
   }
