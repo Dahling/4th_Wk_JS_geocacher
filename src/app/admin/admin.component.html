@@ -1,0 +1,63 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Puzzlepiece</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Puzzlepiece Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Puzzlepiece Age:</label>
+        <br>
+        <input #newAge>
+      </div>
+
+      <!-- <div>
+        <label>Puzzlepiece Type:</label>
+        <br>
+        <select #newType>
+          <option value="Animals" >Animals</option>
+          <option value="Medical">Medical</option>
+          <option value="Education">Education</option>
+          <option value="Emergencies">Emergencies</option>
+          <option value="Charity">Charity</option>
+          <option value="Memorial">Memorial</option>
+        </select>
+      </div> -->
+
+      <div>
+        <label>Puzzle Piece Description:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+
+      <div>
+        <label>Puzzle Piece Likes:</label>
+        <br>
+        <textarea #newLikes></textarea>
+      </div>
+
+      <div>
+        <label>Puzzle Piece Dislikes:</label>
+        <br>
+        <textarea #newDislikes></textarea>
+      </div>
+
+      <div>
+        <label>Image URL:</label>
+        <br>
+        <textarea #newUrl></textarea>
+      </div>
+
+      <button (click)="submitForm(newName.value, newAge.value, newDescription.value, newLikes.value, newDislikes.value, newUrl.value); newName.value=''; newAge.value=''; newDescription.value=''; newLikes.value=''; newdislikes.value=''; newUrl.value='';">Add</button>
+    </div>
+  </div>
+</div>
+
+<div>
+  <app-puzzlepieces></app-puzzlepieces>
+</div>
