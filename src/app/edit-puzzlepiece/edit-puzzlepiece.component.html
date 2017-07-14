@@ -1,3 +1,25 @@
-<p>
-  edit-puzzlepiece works!
-</p>
+<h4>Edit Puzzlepiece</h4>
+
+<label>New Puzzlepiece Name:</label>
+<input [(ngModel)]="selectedPuzzlepiece.name">
+<br>
+
+<label>New Puzzlepiece Age:</label>
+<input [(ngModel)]="selectedPuzzlepiece.age">
+<br>
+
+<label>New Puzzlepiece Description:</label>
+<input [(ngModel)]="selectedPuzzlepiece.description">
+<br>
+
+<label>New Puzzlepiece Likes:</label>
+<input [(ngModel)]="selectedPuzzlepiece.likes">
+<br>
+
+<label>New Puzzlepiece Dislikes:</label>
+<input [(ngModel)]="selectedPuzzlepiece.dislikes">
+<br>
+
+<button (click)="beginUpdatingPuzzlepiece(selectedPuzzlepiece)">Update</button>
+<hr>
+<button (click)="beginDeletingPuzzlepiece(selectedPuzzlepiece)">Delete</button>

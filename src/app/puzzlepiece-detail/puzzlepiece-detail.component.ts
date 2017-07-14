@@ -11,6 +11,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
   styleUrls: ['./puzzlepiece-detail.component.css'],
   providers: [PuzzlepieceService]
 })
+
 export class PuzzlepieceDetailComponent implements OnInit {
   puzzlepieceId: string;
   puzzlepieceToDisplay;
@@ -18,9 +19,9 @@ export class PuzzlepieceDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private location: Location, private puzzlepieceService: PuzzlepieceService) { }
 
   ngOnInit() {
-  this.route.params.forEach((urlParameters) => {
-   this.puzzlepieceId = urlParameters['id'];
+    this.route.params.forEach((urlParameters) => {
+     this.puzzlepieceId = urlParameters['id'];
    });
-   this.puzzlepiecetoDisplay = this.puzzlepieceService.getPuzzlepieceById(this.puzzlepieceId);
+   this.puzzlepieceToDisplay = this.puzzlepieceService.getPuzzlepieceById(this.puzzlepieceId);
   }
 }
