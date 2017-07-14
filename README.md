@@ -23,7 +23,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 1. Clone this repository.
 2. In the terminal, navigate into the repository and run the following commands:
   $ npm install
-  $ bower install
+  Check to see if Bower is installed: $ npm list -g bower
+  If it is not, run: $ npm install bower -g
+  Inside the project directory, initialize Bower: $ bower init
+  Add /bower_components to .gitignore file, under # dependencies
+  Install Bootstrap: $ bower install bootstrap --save
+  Inside the angular-cli.json file, underneath "apps", as well as "styles", place this code: "../bower_components/bootstrap/dist/css/bootstrap.css"
 3. Create a new file called api-keys.ts in the src/app directory
 4. Create a firebase account at https://firebase.google.com/ . On their site choose 'Add Firebase to your web app'.
 5. Place the code they give you inside the 'api-keys.ts' file, using this code...
