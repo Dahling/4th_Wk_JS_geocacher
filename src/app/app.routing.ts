@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent }   from './about/about.component';
 import { PuzzlepiecesComponent }   from './puzzlepieces/puzzlepieces.component';
+import { PuzzlepieceDetailComponent }   from './puzzlepiece-detail/puzzlepiece-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -16,6 +17,10 @@ const appRoutes: Routes = [
   {
     path: 'puzzlepieces',
     component: PuzzlepiecesComponent
+  },
+  {
+  path: 'puzzlepieces/:id',
+  component: PuzzlepieceDetailComponent
   }
  ];
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Puzzlepiece } from '../puzzlepiece.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-puzzlepieces',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PuzzlepiecesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router){}
+
+
 
   ngOnInit() {
   }
+
+  goToDetailPage(clickedPuzzlepiece) {
+     this.router.navigate(['puzzlepieces', clickedPuzzlepiece.$key]);
+   };
 
 }

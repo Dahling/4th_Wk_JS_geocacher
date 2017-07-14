@@ -1,3 +1,7 @@
-<p>
-  puzzlepiece-detail works!
-</p>
+<div>
+  <h3>{{(projectToDisplay | async)?.name}}</h3>
+  <h4>{{(projectToDisplay | async)?.age}}</h4>
+  <p>{{(projectToDisplay | async)?.description}}</p>
+  <p>{{(projectToDisplay | async)?.likes}}</p>
+  <p>{{(projectToDisplay | async)?.dislikes}}</p>
+</div>
