@@ -8,13 +8,15 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { PuzzlepiecesComponent } from './puzzlepieces/puzzlepieces.component';
+import { PuzzlepieceDetailComponent } from './puzzlepiece-detail/puzzlepiece-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     AboutComponent,
-    PuzzlepiecesComponent
+    PuzzlepiecesComponent,
+    PuzzlepieceDetailComponent
   ],
   imports: [
     BrowserModule,
