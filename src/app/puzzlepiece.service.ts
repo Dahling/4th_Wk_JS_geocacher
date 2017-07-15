@@ -24,11 +24,14 @@ export class PuzzlepieceService {
 
   updatePuzzlepiece(localUpdatedPuzzlepiece){
     var puzzlepieceEntryInFirebase = this.getPuzzlepieceById(localUpdatedPuzzlepiece.$key);
-    puzzlepieceEntryInFirebase.update({name: localUpdatedPuzzlepiece.name,
-                                manager: localUpdatedPuzzlepiece.age,
-                                type: localUpdatedPuzzlepiece.description,
-                                description: localUpdatedPuzzlepiece.likes,
-                                amount: localUpdatedPuzzlepiece.dislikes});
+    puzzlepieceEntryInFirebase.update({
+                                name: localUpdatedPuzzlepiece.name,
+                                age: localUpdatedPuzzlepiece.age,
+                                description: localUpdatedPuzzlepiece.description,
+                                likes: localUpdatedPuzzlepiece.likes,
+                                dislikes: localUpdatedPuzzlepiece.dislikes,
+                                url: localUpdatedPuzzlepiece.url
+                              });
   }
 
   deletePuzzlepiece(localPuzzlepieceToDelete){

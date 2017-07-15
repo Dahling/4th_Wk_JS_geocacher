@@ -16,8 +16,8 @@ export class AdminComponent {
 
 
 
-  submitForm(name: string, age: number, description: string, likes: string, dislikes: string) {
-    const newPuzzlepiece: Puzzlepiece = new Puzzlepiece(name, age, description, likes, dislikes);
+  submitForm(name: string, age: number, description: string, likes: string, dislikes: string, url: string) {
+    const newPuzzlepiece: Puzzlepiece = new Puzzlepiece(name, age, description, likes, dislikes, url);
     this.puzzlepieceService.addPuzzlepiece(newPuzzlepiece);
   }
 

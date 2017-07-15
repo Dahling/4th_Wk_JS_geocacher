@@ -47,9 +47,15 @@
         <textarea #newDislikes></textarea>
       </div>
 
+      <div>
+        <label>Image URL:</label>
+        <br>
+        <textarea #newUrl></textarea>
+      </div>
 
 
-      <button (click)="submitForm(newName.value, newAge.value, newDescription.value, newLikes.value, newDislikes.value); newName.value=''; newAge.value=''; newDescription.value=''; newLikes.value=''; newDislikes.value='';">Add</button>
+
+      <button (click)="submitForm(newName.value, newAge.value, newDescription.value, newLikes.value, newDislikes.value,  newUrl.value); newName.value=''; newAge.value=''; newDescription.value=''; newLikes.value=''; newDislikes.value=''; newUrl.value='';">Add</button>
     </div>
   </div>
 </div>

@@ -20,6 +20,10 @@
 <input [(ngModel)]="selectedPuzzlepiece.dislikes">
 <br>
 
+<label>New Puzzlepiece Image:</label>
+<input [(ngModel)]="selectedPuzzlepiece.url">
+<br>
+
 <button (click)="beginUpdatingPuzzlepiece(selectedPuzzlepiece)">Update</button>
 <hr>
 <button (click)="beginDeletingPuzzlepiece(selectedPuzzlepiece)">Delete</button>
