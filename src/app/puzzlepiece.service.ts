@@ -25,10 +25,10 @@ export class PuzzlepieceService {
   updatePuzzlepiece(localUpdatedPuzzlepiece){
     var puzzlepieceEntryInFirebase = this.getPuzzlepieceById(localUpdatedPuzzlepiece.$key);
     puzzlepieceEntryInFirebase.update({name: localUpdatedPuzzlepiece.name,
-                                age: localUpdatedPuzzlepiece.age,
-                                description: localUpdatedPuzzlepiece.description,
-                                likes: localUpdatedPuzzlepiece.likes,
-                                dislikes: localUpdatedPuzzlepiece.dislikes});
+                                manager: localUpdatedPuzzlepiece.age,
+                                type: localUpdatedPuzzlepiece.description,
+                                description: localUpdatedPuzzlepiece.likes,
+                                amount: localUpdatedPuzzlepiece.dislikes});
   }
 
   deletePuzzlepiece(localPuzzlepieceToDelete){

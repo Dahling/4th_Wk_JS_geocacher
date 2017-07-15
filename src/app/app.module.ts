@@ -12,8 +12,9 @@ import { PuzzlepieceDetailComponent } from './puzzlepiece-detail/puzzlepiece-det
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { EditPuzzlepieceComponent } from './edit-puzzlepiece/edit-puzzlepiece.component';
 import { AdminComponent } from './admin/admin.component';
+import { EditPuzzlepieceComponent } from './edit-puzzlepiece/edit-puzzlepiece.component';
+
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,8 +30,8 @@ export const firebaseConfig = {
     AboutComponent,
     PuzzlepiecesComponent,
     PuzzlepieceDetailComponent,
+    AdminComponent,
     EditPuzzlepieceComponent,
-    AdminComponent
   ],
   imports: [
     BrowserModule,
