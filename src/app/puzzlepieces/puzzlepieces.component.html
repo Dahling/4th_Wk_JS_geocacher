@@ -3,19 +3,18 @@
 <p>Here are all the Puzzle Pieces. Find which piece fits your own.</p>
 
 
-<div *ngFor="let puzzlepiece of puzzlepieces | async"  class="panel panel-default">
-
-  <div class="panel panel-default">
-    <img src="{{puzzlepiece.url}}" alt="Picture">
-    <!-- <p>{{project.url}}</p> -->
-    <div class="panel-body">
-      <h3 (click)="goToDetailPage(puzzlepiece)">{{puzzlepiece.name}}<br><em>{{puzzlepiece.age}} Years Old</em></h3>
-      <div *ngIf="currentRoute === '/admin'">
-        {{puzzlepiece.description}}
-        <hr>
-        <app-edit-puzzlepiece [selectedPuzzlepiece]="puzzlepiece"></app-edit-puzzlepiece>
+<div *ngFor="let puzzlepiece of puzzlepieces | async"  class="panel ">
+  <!-- <div class="">
+    <div class=""> -->
+      <img src="{{puzzlepiece.url}}" alt="Picture">
+      <!-- <p>{{project.url}}</p> -->
+      <div class="panel-body">
+        <h3 (click)="goToDetailPage(puzzlepiece)">{{puzzlepiece.name}}<br>{{puzzlepiece.age}} Years Old</h3>
+        <div *ngIf="currentRoute === '/admin'">
+          {{puzzlepiece.description}}
+          <app-edit-puzzlepiece [selectedPuzzlepiece]="puzzlepiece"></app-edit-puzzlepiece>
+        </div>
       </div>
-    </div>
-  </div>
-
+    <!-- </div>
+  </div> -->
 </div>

@@ -1,48 +1,35 @@
-<div class="panel panel-default">
-  <div class="panel-heading">
+<!-- <div class="panel panel-default"> -->
+  <!-- <div class="panel-heading">
     <h3 class="panel-title">Add New Puzzlepiece</h3>
-  </div>
-  <div class="panel-body">
-    <div>
+  </div> -->
+  <!-- <div class="panel-body"> -->
+    <form class="person-form">
       <div>
-        <label>Puzzlepiece Name:</label>
+        <label>Name:</label>
         <br>
         <input #newName>
       </div>
 
       <div>
-        <label>Puzzlepiece Age:</label>
+        <label>Age:</label>
         <br>
         <input #newAge>
       </div>
 
-      <!-- <div>
-        <label>Puzzlepiece Type:</label>
-        <br>
-        <select #newType>
-          <option value="Animals" >Animals</option>
-          <option value="Medical">Medical</option>
-          <option value="Education">Education</option>
-          <option value="Emergencies">Emergencies</option>
-          <option value="Charity">Charity</option>
-          <option value="Memorial">Memorial</option>
-        </select>
-      </div> -->
-
       <div>
-        <label>Puzzle Piece Description:</label>
+        <label>Description:</label>
         <br>
         <textarea #newDescription></textarea>
       </div>
 
       <div>
-        <label>Puzzle Piece Likes:</label>
+        <label>Likes:</label>
         <br>
         <textarea #newLikes></textarea>
       </div>
 
       <div>
-        <label>Puzzle Piece Dislikes:</label>
+        <label>Dislikes:</label>
         <br>
         <textarea #newDislikes></textarea>
       </div>
@@ -56,9 +43,9 @@
 
 
       <button (click)="submitForm(newName.value, newAge.value, newDescription.value, newLikes.value, newDislikes.value,  newUrl.value); newName.value=''; newAge.value=''; newDescription.value=''; newLikes.value=''; newDislikes.value=''; newUrl.value='';">Add</button>
-    </div>
-  </div>
-</div>
+    </form>
+  <!-- </div> --> <!--panel-body-->
+<!-- </div> --> <!--panel-default-->
 
 <div>
   <app-puzzlepieces></app-puzzlepieces>
