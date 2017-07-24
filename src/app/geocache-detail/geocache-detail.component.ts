@@ -22,6 +22,7 @@ export class GeocacheDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
      this.geocacheId = urlParameters['id'];
    });
-   this.geocacheToDisplay = this.geocacheService.getGeocacheById(this.geocacheId);
-  }
+  //  this.geocacheToDisplay = this.geocacheService.getGeocacheById(this.geocacheId);
+  // }
+}
 }

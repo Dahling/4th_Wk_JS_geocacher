@@ -1,2 +1,28 @@
-<h1>{{title}}</h1>
-<h2>Welcome to the Geocacher!</h2>
+<h2>Welcome to the Geocacher...</h2>
+
+<app-geocache-detail></app-geocache-detail>
+<app-geocaches></app-geocaches>
+
+  <div>
+    <label for="name">Name</label>
+    <input #newName>
+  </div>
+
+  <div>
+    <label for="lat">Latitude</label>
+    <input #newLat>
+  </div>
+
+  <div>
+    <label for="lng">Longitude</label>
+    <input #newLng>
+  </div>
+
+
+  <button (click)="submitForm
+  (newName.value,
+  newLat.value,
+  newLng.value);
+  newName.value='';
+  newLat.value='';
+  newLng.value=''">Submit</button>

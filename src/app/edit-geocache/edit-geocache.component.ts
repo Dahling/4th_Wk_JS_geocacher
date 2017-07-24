@@ -17,14 +17,14 @@ export class EditGeocacheComponent implements OnInit {
   ngOnInit() {
   }
 
-  beginUpdatingGeocache(geocacheToUpdate) {
-    this.geocacheService.updateGeocache(geocacheToUpdate);
-  }
-
-  beginDeletingGeocache(geocacheToDelete) {
-    if(confirm('Are you sure you want to delete this geocache?')) {
-      this.geocacheService.deleteGeocache(geocacheToDelete);
-    }
-  }
+  // beginUpdatingGeocache(geocacheToUpdate) {
+  //   this.geocacheService.updateGeocache(geocacheToUpdate);
+  // }
+  //
+  // beginDeletingGeocache(geocacheToDelete) {
+  //   if(confirm('Are you sure you want to delete this geocache?')) {
+  //     this.geocacheService.deleteGeocache(geocacheToDelete);
+  //   }
+  // }
 
 }
