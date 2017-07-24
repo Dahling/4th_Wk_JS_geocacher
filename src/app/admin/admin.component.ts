@@ -1,24 +1,24 @@
 import { Component } from '@angular/core';
-import { PuzzlepieceService } from '../puzzlepiece.service';
-import { Puzzlepiece } from '../puzzlepiece.model';
+import { GeocacheService } from '../geocache.service';
+import { Geocache } from '../geocache.model';
 
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css'],
-  providers: [PuzzlepieceService]
+  providers: [GeocacheService]
 })
 
 export class AdminComponent {
 
-  constructor(private puzzlepieceService: PuzzlepieceService) { }
+  constructor(private geocacheService: GeocacheService) { }
 
 
 
-  submitForm(name: string, age: number, description: string, likes: string, dislikes: string, url: string) {
-    const newPuzzlepiece: Puzzlepiece = new Puzzlepiece(name, age, description, likes, dislikes, url);
-    this.puzzlepieceService.addPuzzlepiece(newPuzzlepiece);
+  submitForm(name: string, age: number, description: string) {
+    const newGeocache: Geocache = new Geocache(name, age, description);
+    this.geocacheService.addGeocache(newGeocache);
   }
 
 }

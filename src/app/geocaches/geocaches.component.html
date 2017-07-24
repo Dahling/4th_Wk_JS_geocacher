@@ -1,0 +1,20 @@
+<h2>Geocaches</h2>
+
+<p>Here are all the Geocaches...</p>
+
+
+<div *ngFor="let geocache of geocaches | async"  class="panel ">
+  <!-- <div class="">
+    <div class=""> -->
+      <img src="{{geocache.url}}" alt="Picture">
+      <!-- <p>{{project.url}}</p> -->
+      <div class="panel-body">
+        <h3 (click)="goToDetailPage(geocache)">{{geocache.name}}<br>{{geocache.age}} Years Old</h3>
+        <div *ngIf="currentRoute === '/admin'">
+          {{geocache.description}}
+          <app-edit-geocache [selectedGeocache]="geocache"></app-edit-geocache>
+        </div>
+      </div>
+    <!-- </div>
+  </div> -->
+</div>

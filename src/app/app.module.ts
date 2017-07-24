@@ -7,13 +7,13 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
-import { PuzzlepiecesComponent } from './puzzlepieces/puzzlepieces.component';
-import { PuzzlepieceDetailComponent } from './puzzlepiece-detail/puzzlepiece-detail.component';
+import { GeocachesComponent } from './geocaches/geocaches.component';
+import { GeocacheDetailComponent } from './geocache-detail/geocache-detail.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
-import { EditPuzzlepieceComponent } from './edit-puzzlepiece/edit-puzzlepiece.component';
+import { EditGeocacheComponent } from './edit-geocache/edit-geocache.component';
 
 
 export const firebaseConfig = {
@@ -28,10 +28,10 @@ export const firebaseConfig = {
     AppComponent,
     WelcomeComponent,
     AboutComponent,
-    PuzzlepiecesComponent,
-    PuzzlepieceDetailComponent,
+    GeocachesComponent,
+    GeocacheDetailComponent,
     AdminComponent,
-    EditPuzzlepieceComponent,
+    EditGeocacheComponent,
   ],
   imports: [
     BrowserModule,

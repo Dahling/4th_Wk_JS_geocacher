@@ -1,0 +1,30 @@
+
+<h4>Edit Geocache</h4>
+
+<h5>Name:</h5>
+<input [(ngModel)]="selectedGeocache.name">
+<br>
+
+<h5>Age:</h5>
+<input [(ngModel)]="selectedGeocache.age">
+<br>
+
+<h5>Description:</h5>
+<input [(ngModel)]="selectedGeocache.description">
+<br>
+
+<h5>Likes:</h5>
+<input [(ngModel)]="selectedGeocache.likes">
+<br>
+
+<h5>Dislikes:</h5>
+<input [(ngModel)]="selectedGeocache.dislikes">
+<br>
+
+<h5>Image URL:</h5>
+<input [(ngModel)]="selectedGeocache.url">
+<br>
+
+<button (click)="beginUpdatingGeocache(selectedGeocache)">Update</button>
+<hr>
+<button (click)="beginDeletingGeocache(selectedGeocache)">Delete</button>

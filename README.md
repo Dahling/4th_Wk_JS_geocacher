@@ -1,4 +1,4 @@
-# PuzzlePieces
+# Geocacher
 
 #### App
 
@@ -11,12 +11,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ### Specs
 | Behavior | Example Input | Example Output |
 | :-------------     | :------------- | :------------- |
-| **User may visit a page to see a list of all club members** | ... | ... |
-| **User may click a club member's entry, in the list, to visit his or her profile page, to see additional profile details** | ... | ... |
-| **User may visit an "About" page that explains what the club is, and what the club does** | ... | ... |
-| **Administrators may add new users to the club** | ... | ... |
-| **Administrators may edit and update user profiles** | ... | ... |
-| **Administrators may delete users who leave the club** | ... | ... |
+| **User may add a new geocache that's been hidden, either by its physical address or GPS coordinates (latitude and longitude)** | ... | ... |
+| **User may view a listing of all geocaches that have been added to the site** | ... | ... |
+| **When clicking on a particular geocache from the list, the user may see both the physical address and the GPS coordinates, as well as the creator for that geocache listing** | ... | ... |
+
 
 
 ## Setup/Installation Requirements
@@ -43,7 +41,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 7. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Known Bugs
-* None
+* . . .
 
 ## Technologies Used
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.

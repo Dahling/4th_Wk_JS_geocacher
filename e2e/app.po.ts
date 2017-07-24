@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class PuzzlePiecesPage {
+export class GeoCachesPage {
   navigateTo() {
     return browser.get('/');
   }

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EditPuzzlepieceComponent } from './edit-puzzlepiece.component';
+import { GeocacheDetailComponent } from './geocache-detail.component';
 
-describe('EditPuzzlepieceComponent', () => {
-  let component: EditPuzzlepieceComponent;
-  let fixture: ComponentFixture<EditPuzzlepieceComponent>;
+describe('GeocacheDetailComponent', () => {
+  let component: GeocacheDetailComponent;
+  let fixture: ComponentFixture<GeocacheDetailComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EditPuzzlepieceComponent ]
+      declarations: [ GeocacheDetailComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EditPuzzlepieceComponent);
+    fixture = TestBed.createComponent(GeocacheDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

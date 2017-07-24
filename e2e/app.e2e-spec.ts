@@ -1,10 +1,10 @@
-import { PuzzlePiecesPage } from './app.po';
+import { GeocachesPage } from './app.po';
 
-describe('puzzle-pieces App', () => {
-  let page: PuzzlePiecesPage;
+describe('geo-caches App', () => {
+  let page: GeocachesPage;
 
   beforeEach(() => {
-    page = new PuzzlePiecesPage();
+    page = new GeocachesPage();
   });
 
   it('should display message saying app works', () => {

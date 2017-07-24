@@ -1,10 +1,10 @@
-import { ModuleWithProviders }  from '@angular/core';
+import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { AboutComponent }   from './about/about.component';
-import { PuzzlepiecesComponent }   from './puzzlepieces/puzzlepieces.component';
-import { PuzzlepieceDetailComponent }   from './puzzlepiece-detail/puzzlepiece-detail.component';
-import { AdminComponent }   from './admin/admin.component';
+import { AboutComponent } from './about/about.component';
+import { GeocachesComponent } from './geocaches/geocaches.component';
+import { GeocacheDetailComponent } from './geocache-detail/geocache-detail.component';
+import { AdminComponent } from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
@@ -16,12 +16,12 @@ const appRoutes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'puzzlepieces',
-    component: PuzzlepiecesComponent
+    path: 'geocaches',
+    component: GeocachesComponent
   },
   {
-  path: 'puzzlepieces/:id',
-  component: PuzzlepieceDetailComponent
+  path: 'geocaches/:id',
+  component: GeocacheDetailComponent
   },
   {
       path: 'admin',
